@@ -1,0 +1,18 @@
+/* App.css */
+.fade-enter {
+  @apply opacity-0 translate-y-2; /* Start invisible and slightly below */
+}
+
+.fade-enter-active {
+  @apply opacity-100 translate-y-0; /* Transition to visible */
+  transition: opacity 500ms, transform 500ms; /* Animation duration */
+}
+
+.fade-exit {
+  @apply opacity-100 translate-y-0; /* Start fully visible */
+}
+
+.fade-exit-active {
+  @apply opacity-0 translate-y-2; /* Transition to invisible and slightly below */
+  transition: opacity 500ms, transform 500ms; /* Animation duration */
+}

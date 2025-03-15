@@ -1,0 +1,53 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.6.3",
+    "nodemon": "^3.1.7",
+    "validator": "^13.12.0"
+  },
+  "build": {
+    "appId": "com.example.backend",
+    "asar": true,
+    "files": ["main.js", "app.js", ".env", "public/**/*"],
+    "directories": {
+      "output": "dist"
+    }
+  },
+"pkg": {
+  "assets": [
+    ".env",
+    "public/**/*",
+    "routes/**/*.js",
+    "controllers/**/*.js",
+    "models/**/*.js",
+    "helpers/**/*.js",
+    "middleware/**/*.js",
+    "node_modules/axios/**/*"
+  ],
+
+  "targets": ["node18-win-x64"]
+},
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  }
+}
