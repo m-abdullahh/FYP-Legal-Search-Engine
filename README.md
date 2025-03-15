@@ -9,7 +9,7 @@ An AI-driven legal research platform built to simplify complex legal information
 
 
 ## Interface Overview
-<img src="https://i.imgur.com/3DwY8x0.gif"style="width:680em">
+<img src="https://i.imgur.com/3DwY8x0.gif" style="width:680em">
 
 ## 🧰 Tech Stack
 
